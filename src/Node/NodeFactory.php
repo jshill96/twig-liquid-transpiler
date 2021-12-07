@@ -5,8 +5,12 @@ namespace Parser\Node;
 use Exception;
 use Parser\Node\Expression\AddBinary;
 use Parser\Node\Expression\ConstantExpression;
+use Parser\Node\Expression\DivBinary;
 use Parser\Node\Expression\FilterExpression;
+use Parser\Node\Expression\ModBinary;
+use Parser\Node\Expression\MulBinary;
 use Parser\Node\Expression\NameExpression;
+use Parser\Node\Expression\SubBinary;
 use Parser\Node\Node;
 use Parser\Node\TextNode;
 use Twig\Node\Node as TwigNode;
@@ -20,6 +24,10 @@ class NodeFactory {
         'Twig\Node\Expression\FilterExpression' => FilterExpression::class,
         'Twig\Node\Expression\NameExpression' => NameExpression::class,
         'Twig\Node\Expression\Binary\AddBinary' => AddBinary::class,
+        'Twig\Node\Expression\Binary\DivBinary' => DivBinary::class,
+        'Twig\Node\Expression\Binary\SubBinary' => SubBinary::class,
+        'Twig\Node\Expression\Binary\ModBinary' => ModBinary::class,
+        'Twig\Node\Expression\Binary\MulBinary' => MulBinary::class,
         'Twig\Node\Expression\ConstantExpression' => ConstantExpression::class,
         'Twig\Node\Node' => Node::class,
     ];

@@ -2,13 +2,13 @@
 
 namespace Parser\Node\Expression;
 
-use Parser\Node\Node;
 use Parser\Node\NodeFactory;
 
-class SubBinary extends Node {
+class DivBinary extends \Parser\Node\Node
+{
     public function transpile()
     {
-        $operator = "-";
+        $operator = "/";
         $left = NodeFactory::createNode($this->twigNode->getNode('left'));
         $right = NodeFactory::createNode($this->twigNode->getNode('right'));
 
