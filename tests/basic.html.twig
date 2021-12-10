@@ -1,2 +1,19 @@
 Hello {{ variable }}
+
+{# Math #}
 Hello {{ 1 + 1 - 1 / 1 * 1 % 1 }}
+Hello {{  (1 + 1) ** (1 - 1) }}
+Hello {{  1 // 1 }}
+
+{# Comparison #}
+{% if true and false or true %}
+    {{  hello }}
+{% endif %}
+
+{% if true %}
+    {{  'hello' }}
+{%  elseif false %}
+    {{  'world' }}
+{% else %}
+    {{  'asdf' }}
+{% endif %}
