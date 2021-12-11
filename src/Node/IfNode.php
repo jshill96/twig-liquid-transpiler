@@ -9,7 +9,7 @@ class IfNode extends Node
 
         if ($this->requiresParens())
         {
-            throw new \Exception('Liquid does not support parentheses in conditional statements: Line ' . $this->twigNode->getTemplateLine());
+            throw new \Exception('Liquid does not support parentheses in conditional statements: Line ' . $this->twigNode->getTemplateLine() . ' in ' . $this->twigNode->getTemplateName());
         }
 
         /** @var $tests \Twig\Node\Node */

@@ -6,7 +6,7 @@ Hello {{  (1 + 1) ** (1 - 1) }}
 Hello {{  1 // 1 }}
 
 {# Comparison #}
-{% if (true or false) and (true or false) %}
+{% if true or false and true %}
     {{  hello }}
 {% endif %}
 
@@ -16,4 +16,8 @@ Hello {{  1 // 1 }}
     {{  'world' }}
 {% else %}
     {{  'asdf' }}
+{% endif %}
+
+{%  if 1 > 1 or 1 >= 1 or 1 <= 1 or 1 < 1 or 1 == 1 or 1 != 1 %}
+    {{  hello }}
 {% endif %}

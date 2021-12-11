@@ -7,11 +7,17 @@ use Parser\Node\Expression\AddBinary;
 use Parser\Node\Expression\AndBinary;
 use Parser\Node\Expression\ConstantExpression;
 use Parser\Node\Expression\DivBinary;
+use Parser\Node\Expression\EqualBinary;
 use Parser\Node\Expression\FilterExpression;
 use Parser\Node\Expression\FloorDivBinary;
+use Parser\Node\Expression\GreaterBinary;
+use Parser\Node\Expression\GreaterEqualBinary;
+use Parser\Node\Expression\LessBinary;
+use Parser\Node\Expression\LessEqualBinary;
 use Parser\Node\Expression\ModBinary;
 use Parser\Node\Expression\MulBinary;
 use Parser\Node\Expression\NameExpression;
+use Parser\Node\Expression\NotEqualBinary;
 use Parser\Node\Expression\OrBinary;
 use Parser\Node\Expression\PowerBinary;
 use Parser\Node\Expression\SubBinary;
@@ -35,6 +41,12 @@ class NodeFactory {
         'Twig\Node\Expression\Binary\SubBinary' => SubBinary::class,
         'Twig\Node\Expression\Binary\ModBinary' => ModBinary::class,
         'Twig\Node\Expression\Binary\MulBinary' => MulBinary::class,
+        'Twig\Node\Expression\Binary\NotEqualBinary' => NotEqualBinary::class,
+        'Twig\Node\Expression\Binary\EqualBinary' => EqualBinary::class,
+        'Twig\Node\Expression\Binary\LessBinary' => LessBinary::class,
+        'Twig\Node\Expression\Binary\LessEqualBinary' => LessEqualBinary::class,
+        'Twig\Node\Expression\Binary\GreaterBinary' => GreaterBinary::class,
+        'Twig\Node\Expression\Binary\GreaterEqualBinary' => GreaterEqualBinary::class,
         'Twig\Node\Expression\Binary\PowerBinary' => PowerBinary::class,
         'Twig\Node\Expression\Binary\FloorDivBinary' => FloorDivBinary::class,
         'Twig\Node\Expression\ConstantExpression' => ConstantExpression::class,
