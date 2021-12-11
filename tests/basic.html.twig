@@ -1,23 +1,27 @@
-Hello {{ variable }}
+{#Hello {{ variable }}#}
 
 {# Math #}
-Hello {{ 1 + 1 - 1 / 1 * 1 % 1 }}
-Hello {{  (1 + 1) ** (1 - 1) }}
-Hello {{  1 // 1 }}
+{#Hello {{ 1 + 1 - 1 / 1 * 1 % 1 }}#}
+{#Hello {{  (1 + 1) ** (1 - 1) }}#}
+{#Hello {{  1 // 1 }}#}
 
 {# Comparison #}
-{% if true or false and true %}
-    {{  hello }}
-{% endif %}
+{#{% if true or false and true %}#}
+{#    {{  hello }}#}
+{#{% endif %}#}
 
-{% if true %}
-    {{  'hello' }}
-{%  elseif false %}
-    {{  'world' }}
-{% else %}
-    {{  'asdf' }}
-{% endif %}
+{#{% if true %}#}
+{#    {{  'hello' }}#}
+{#{%  elseif false %}#}
+{#    {{  'world' }}#}
+{#{% else %}#}
+{#    {{  'asdf' }}#}
+{#{% endif %}#}
 
-{%  if 1 > 1 or 1 >= 1 or 1 <= 1 or 1 < 1 or 1 == 1 or 1 != 1 %}
-    {{  hello }}
+{#{%  if 1 > 1 or 1 >= 1 or 1 <= 1 or 1 < 1 or 1 == 1 or 1 != 1 %}#}
+{#    {{  hello }}#}
+{#{% endif %}#}
+
+{%  if  'as' in 'asdf' %}
+    {{  'contains' }}
 {% endif %}

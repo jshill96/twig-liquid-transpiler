@@ -12,6 +12,7 @@ use Parser\Node\Expression\FilterExpression;
 use Parser\Node\Expression\FloorDivBinary;
 use Parser\Node\Expression\GreaterBinary;
 use Parser\Node\Expression\GreaterEqualBinary;
+use Parser\Node\Expression\InBinary;
 use Parser\Node\Expression\LessBinary;
 use Parser\Node\Expression\LessEqualBinary;
 use Parser\Node\Expression\ModBinary;
@@ -47,6 +48,7 @@ class NodeFactory {
         'Twig\Node\Expression\Binary\LessEqualBinary' => LessEqualBinary::class,
         'Twig\Node\Expression\Binary\GreaterBinary' => GreaterBinary::class,
         'Twig\Node\Expression\Binary\GreaterEqualBinary' => GreaterEqualBinary::class,
+        'Twig\Node\Expression\Binary\InBinary' =>InBinary::class,
         'Twig\Node\Expression\Binary\PowerBinary' => PowerBinary::class,
         'Twig\Node\Expression\Binary\FloorDivBinary' => FloorDivBinary::class,
         'Twig\Node\Expression\ConstantExpression' => ConstantExpression::class,
